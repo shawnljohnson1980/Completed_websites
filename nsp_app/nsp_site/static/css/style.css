@@ -1,0 +1,39 @@
+body{
+
+  background: url("/static/img/nsp_logo_img.jpg") 50%, 0 no-repeat;
+  background-size: cover;
+  color:white;
+  height: 450px;
+  padding: 100px 0 0 0;
+  opacity: 90%;
+}
+form{
+  min-width: 575px;
+  margin-left: 450px;
+  height: 575px;
+  margin-top: 0px;
+  padding-top:0px;
+}
+.btn-light {
+  color: #ffffff;
+  background-color: #b92845;
+  border-color: #f8f9fa;
+}
+.text-white.border-rider {
+  position: absolute;
+  top: 0px;
+  margin-top: -12px;
+  width:375px;
+}
+#form_1{
+  min-width: 575px;
+  margin-left: 450px;
+  height: 500px;
+  margin-top: 0px;
+  padding-top:0px;
+}
+#home{
+  position:absolute;
+  right: 25px;
+
+}

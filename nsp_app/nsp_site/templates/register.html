@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Login and Registration</title>
+  {% load static %}
+  <title>New Spectrum Photography</title>
+  <link rel="icon" href="{% static 'favicon.ico
+    ' %}">
+  {% load static %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9a2cd9107e.js" crossorigin="anonymous"></script>
+  <script src=" https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap"></script>
+  <link rel="stylesheet" href="{% static '/css/style.css' %} ">
+</head>
+
+
+<body>
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Gallery</h5>
+        <a class="text-muted" href="lr"> Login</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark text-white"> New Spectrum Photography
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="container mt-5">
+
+  </div>
+  <div class="col-4">
+    <form class="border-dark shadow p-5" action="user/login" method="POST">
+      {% csrf_token %}
+      {% for message in messages %}
+      <p>{{ message }}</p>
+      {% endfor %}
+      <p class="text-white border-rider"> Log in to view your account</p>
+      <div class="form-group"><label class="mt-5">Email</label><input class="form-control" type="email"
+          placeholder="Email Address" name="email"></div>
+      <div class="form-group"><label>Password</label><input class="form-control" type="password" placeholder="Password"
+          name="password"></div>
+      <div class="form-group text-right"><button class="btn btn-light shadow" type="submit"><a
+            href='/user/login'></a>Login</button>
+      </div>
+      <h5 class="text-primary p-1">Havent Registered yet?</h5>
+      <a class="text-primary" href='register'>Register Here</a>
+    </form>
+  </div>
+  </div>
+  </div>
+  <script src="{% static '/js/jquery.min.js' %}"></script>
+  <script src="{% static '/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
