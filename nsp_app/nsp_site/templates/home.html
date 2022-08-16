@@ -1,100 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>New Spectrum Photography</title>
-    <link
-      rel="icon"
-      href="{% static 'favicon.ico
-    ' %}"
-    />
-    {% load static %}
-    <link rel="icon" href="{% static 'favicon.ico' %}">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/9a2cd9107e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src=" https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap"></script>
-    <link rel="stylesheet" href="{% static '/css/style.css' %} " />
-  </head>
-  <html>
-    <body>
-      <div class="fixed-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-light p-4">
-            <h5 class="text-dark h4">New Spectrum Photography</h5>
-            <a class="text-muted" href="login/lr"> Login</a>
-          </div>
-        </div>
-        <nav class="navbar navbar-light bg-light text-dark">
-          New Spectrum Photography
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>New Spectrum Photography</title>
+  <link rel="icon" href="{% static 'favicon.ico
+    ' %}" />
+  {% load static %}
+  <link rel="icon" href="{% static 'favicon.ico' %}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9a2cd9107e.js" crossorigin="anonymous"></script>
+  <script src=" https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap"></script>
+  <link rel="stylesheet" href="{% static '/css/style.css' %} " />
+</head>
+<html>
+<body class="bg-black">
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-light h4">New Spectrum Photography</h5>
+        <a class="text-muted" href="login/lr"> Login</a>
       </div>
-      Galleries
-      <div class="row">
-          <h4>Galleries</h4>
-          <div class="card bg-white text-danger border border-rounded shadow p-5 m-4" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="Child walking">
-            <div class="card-body">
-              <h5 class="card-title">Family</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="family" class="btn btn-light border border-light">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card bg-transparent text-light bg-transparent shadow p-5 m-4" style="width: 18rem;">
-            <h5 class="card-title">Children</h5>
-            <a href="children" class="border border-light">
-            <img src="{% static 'media/children/nevaeh_b_w.jpg' %}" class="card-img-top border border-silver shadow" alt="Child Walking">
-            <div class="card-body"></a>
-            </div>
-          </div>
-          <div class="card bg-white text-danger bg-transparent shadow p-5 m-4" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Events</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="events" class="btn btn-light border border-light">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card bg-white text-danger border border-rounded shadow p-5 m-4" style="width: 18rem;">
-            <h5 class="card-title ">Modeling</h5>
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <a href="modeling" class="btn btn-light border border-light"></a>
-            </div>
-          </div>
-        </div>
-    </body>
-  </html>
+    </div>
+    <nav class="navbar navbar-dark bg-dark text-light">
+      New Spectrum Photography
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="row mt-5">
+    <div class="header p-5">
+      <label>
+        <h4 class="ml-5 m-5 ">Galleries</h4>
+        <hr>
+      </label>
+    </div>
+    <div class="card bg-transparent border-none text-light bg-transparent p-3 mt-5 pt-5 " style="width: 19rem">
+      <h5 class="card-title bg-transparent border-none text-light mt-5  ">Family</h5>
+      <div class="card-body border-none bg-transparent">
+        <a href="family" class=" border-none">
+          <img src="{% static 'media/families/family_7.jpg' %}" class="card-img-top border-none "
+            alt="family portrait"></a>
+      </div>
+    </div>
+    <div class="card bg-transparent border-none text-light bg-transparent p-3 mt-5" style="width: 19rem">
+      <h5 class="card-title bg-transparent border-none text-light mt-5 ">Children</h5>
+      <div class="card-body border-none bg-transparent">
+        <a href="children" class="border-none">
+          <img src="{% static 'media/children/nevaeh_b_w.jpg' %}" class="card-img-top border-none "
+            alt="Child Walking"></a>
+      </div>
+    </div>
+    <div class="card bg-transparent border-none text-light bg-transparent p-3 mt-5 pt-5" style="width: 19rem">
+      <h5 class="card-title bg-transparent border-none text-light mt-5  ">Models </h5>
+      <div class="card-body border-none bg-transparent">
+        <a href="models" class="border-none">
+          <img src="{% static 'media/modeling/delaney_goth_27.jpg' %}" class="card-img-top border-none border-rounded"
+            alt="Goth Modeling image"></a>
+      </div>
+    </div>
+    <div class="card bg-transparent border-none text-light bg-transparent p-3 mt-5" style="width: 19rem">
+      <h5 class="card-title bg-transparent border-none text-light mt-5 ">Events</h5>
+      <div class="card-body border-none bg-transparent">
+        <a href="events" class="border-none">
+          <img src="{% static 'media/children/img_0204.jpg' %}" class="card-img-top border-none" alt="Child running">
+        </a>
+      </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </html>

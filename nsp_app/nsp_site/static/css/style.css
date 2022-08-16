@@ -1,11 +1,10 @@
+*{
+  margin:0px;
+}
 body{
-
-  background: url("/static/media/nsp_logo_img.jpg") 70%, 0 no-repeat;
-  background-size: cover;
+  background-color: rgba(0,0,0);
   color:white;
-  height: 450px;
-  padding: 100px 0 0 0;
-  opacity: 90%;
+  padding: 0, 0, 0, 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -50,6 +49,18 @@ form{
 }
 .card .bg-white .text-danger .border .border-rounded .shadow .p-5 .m-4{
 border-radius: 7px;
+}
+
+hr{
+  border-top: solid rgb(195, 80, 113);
+}
+
+.card .bg-transparent .border-none .text-light .bg-transparent .p-3 .mt-5 .pt-5{
+ width:18rem;
+  transition: height 2s,width 2s;
+}
+img:hover {
+  width: 18.75rem;
 }
 * {box-sizing:border-box}
 
