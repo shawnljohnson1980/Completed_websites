@@ -45,8 +45,10 @@ def login(request):
     request.session['user_id']=user.id
    
     messages.info(request, "login successful")
-    return redirect('/the_wall')
+    return redirect('/')
 
+def register(request):
+    return render(request,'register.html')
 
 def log_out(request):
     request.session.flush()
